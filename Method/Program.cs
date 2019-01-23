@@ -17,6 +17,10 @@ namespace Method
                 if ((age > 17) && (age <= 100))
                 {
                     int get_max_heart_rate = Max_Heart_Rate(age);
+
+                    Console.WriteLine("\nBased on your age you entered: " + age);
+                    Console.WriteLine("Your maximum heart rate during exercise should be  " + get_max_heart_rate);
+
                     Console.WriteLine("Press any key to exit the program");
                     Console.ReadKey(true);
                 }
@@ -48,8 +52,7 @@ namespace Method
             //Formula for calculating the max heart rate during exercise
             int calc_max_heart_rate = 220 - get_age;
 
-            Console.WriteLine("\nBased on your age you entered: " + get_age);
-            Console.WriteLine("Your maximum heart rate during exercise should be  " + calc_max_heart_rate);
+           
 
             return calc_max_heart_rate;
         }//End of Max heart rate method
